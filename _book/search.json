@@ -1,0 +1,54 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Python: de Usuario a Explorador de Datos",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nComo se ve en Figure figurota.\n\n\n\n\n\n\nFigure 1: figurota",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\nComo se ve en Figure 1.1.\n\n\n\n\n\n\nFigure 1.1: figurota",
+    "crumbs": [
+      "Introduccion",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "libreta.html",
+    "href": "libreta.html",
+    "title": "2  Ejercicio propuesto",
+    "section": "",
+    "text": "import pandas as pd\n\n\npd.concat()\n\nSyntaxError: invalid syntax (1465400318.py, line 1)\n\n\n\nf = '../data/esolmet/001.xls'\ne1 = pd.read_excel(f,index_col=0,parse_dates=True,skiprows=[0,1,3,4])\ne1.head()\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n2018-01-01 00:00:00\n0.057\n0.0\n0.0\n0.001\n18.93\n41.57\n1.253\n879.0692\n\n\n2018-01-01 00:10:00\n0.002\n0.0\n0.0\n0.001\n18.76\n41.00\n0.418\n879.4363\n\n\n2018-01-01 00:20:00\n0.170\n0.0\n0.0\n0.001\n18.92\n40.96\n0.955\n879.5181\n\n\n2018-01-01 00:30:00\n0.371\n0.0\n0.0\n0.001\n18.52\n42.46\n1.823\n879.5826\n\n\n2018-01-01 00:40:00\n0.305\n0.0\n0.0\n0.001\n18.49\n42.43\n2.149\n879.6826\n\n\n\n\n\n\n\n\nf = '../data/esolmet/002.xls'\ne2 = pd.read_excel(f,index_col=0,parse_dates=True,skiprows=[0,1,3,4])\ne2.head()\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n2018-02-01 00:00:00\n0.003\n0.0\n0.0\n0.001\n15.38\n53.71\n1.531\n878.2341\n\n\n2018-02-01 00:10:00\n0.313\n0.0\n0.0\n0.001\n15.71\n50.03\n2.339\n878.1605\n\n\n2018-02-01 00:20:00\n0.029\n0.0\n0.0\n0.001\n15.57\n51.52\n2.836\n877.9796\n\n\n2018-02-01 00:30:00\n0.013\n0.0\n0.0\n0.001\n15.23\n52.00\n2.780\n877.9725\n\n\n2018-02-01 00:40:00\n0.001\n0.0\n0.0\n0.001\n15.28\n51.80\n2.541\n878.0463\n\n\n\n\n\n\n\n\ne = pd.concat([e2,e1])\ne\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n2018-02-01 00:00:00\n0.003\n0.0\n0.0\n0.001\n15.38\n53.71\n1.531\n878.2341\n\n\n2018-02-01 00:10:00\n0.313\n0.0\n0.0\n0.001\n15.71\n50.03\n2.339\n878.1605\n\n\n2018-02-01 00:20:00\n0.029\n0.0\n0.0\n0.001\n15.57\n51.52\n2.836\n877.9796\n\n\n2018-02-01 00:30:00\n0.013\n0.0\n0.0\n0.001\n15.23\n52.00\n2.780\n877.9725\n\n\n2018-02-01 00:40:00\n0.001\n0.0\n0.0\n0.001\n15.28\n51.80\n2.541\n878.0463\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n2018-01-31 23:20:00\n0.000\n0.0\n0.0\n0.001\n15.82\n52.51\n2.070\n878.3740\n\n\n2018-01-31 23:30:00\n0.000\n0.0\n0.0\n0.001\n15.42\n53.71\n1.581\n878.5696\n\n\n2018-01-31 23:40:00\n0.081\n0.0\n0.0\n0.001\n15.28\n53.26\n2.083\n878.6181\n\n\n2018-01-31 23:50:00\n0.075\n0.0\n0.0\n0.001\n15.32\n52.38\n2.500\n878.3397\n\n\n2018-02-01 00:00:00\n0.003\n0.0\n0.0\n0.001\n15.38\n53.71\n1.531\n878.2341\n\n\n\n\n8498 rows × 8 columns\n\n\n\n\ne.sort_index()\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n2018-01-01 00:00:00\n0.057\n0.0\n0.0\n0.001\n18.93\n41.57\n1.253\n879.0692\n\n\n2018-01-01 00:10:00\n0.002\n0.0\n0.0\n0.001\n18.76\n41.00\n0.418\n879.4363\n\n\n2018-01-01 00:20:00\n0.170\n0.0\n0.0\n0.001\n18.92\n40.96\n0.955\n879.5181\n\n\n2018-01-01 00:30:00\n0.371\n0.0\n0.0\n0.001\n18.52\n42.46\n1.823\n879.5826\n\n\n2018-01-01 00:40:00\n0.305\n0.0\n0.0\n0.001\n18.49\n42.43\n2.149\n879.6826\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n2018-02-28 23:20:00\n0.000\n0.0\n0.0\n0.000\n22.49\n38.44\n1.811\n874.8154\n\n\n2018-02-28 23:30:00\n0.000\n0.0\n0.0\n0.000\n22.75\n39.60\n0.859\n874.8812\n\n\n2018-02-28 23:40:00\n0.003\n0.0\n0.0\n0.000\n22.34\n39.43\n1.244\n875.0685\n\n\n2018-02-28 23:50:00\n0.117\n0.0\n0.0\n0.000\n22.52\n39.90\n1.729\n874.9626\n\n\n2018-03-01 00:00:00\n0.004\n0.0\n0.0\n0.000\n22.35\n41.03\n1.508\n875.0115\n\n\n\n\n8498 rows × 8 columns\n\n\n\n\ne\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n2018-02-01 00:00:00\n0.003\n0.0\n0.0\n0.001\n15.38\n53.71\n1.531\n878.2341\n\n\n2018-02-01 00:10:00\n0.313\n0.0\n0.0\n0.001\n15.71\n50.03\n2.339\n878.1605\n\n\n2018-02-01 00:20:00\n0.029\n0.0\n0.0\n0.001\n15.57\n51.52\n2.836\n877.9796\n\n\n2018-02-01 00:30:00\n0.013\n0.0\n0.0\n0.001\n15.23\n52.00\n2.780\n877.9725\n\n\n2018-02-01 00:40:00\n0.001\n0.0\n0.0\n0.001\n15.28\n51.80\n2.541\n878.0463\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n2018-01-31 23:20:00\n0.000\n0.0\n0.0\n0.001\n15.82\n52.51\n2.070\n878.3740\n\n\n2018-01-31 23:30:00\n0.000\n0.0\n0.0\n0.001\n15.42\n53.71\n1.581\n878.5696\n\n\n2018-01-31 23:40:00\n0.081\n0.0\n0.0\n0.001\n15.28\n53.26\n2.083\n878.6181\n\n\n2018-01-31 23:50:00\n0.075\n0.0\n0.0\n0.001\n15.32\n52.38\n2.500\n878.3397\n\n\n2018-02-01 00:00:00\n0.003\n0.0\n0.0\n0.001\n15.38\n53.71\n1.531\n878.2341\n\n\n\n\n8498 rows × 8 columns\n\n\n\n\ne.sort_index(inplace=True)\n\n\ne\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n2018-01-01 00:00:00\n0.057\n0.0\n0.0\n0.001\n18.93\n41.57\n1.253\n879.0692\n\n\n2018-01-01 00:10:00\n0.002\n0.0\n0.0\n0.001\n18.76\n41.00\n0.418\n879.4363\n\n\n2018-01-01 00:20:00\n0.170\n0.0\n0.0\n0.001\n18.92\n40.96\n0.955\n879.5181\n\n\n2018-01-01 00:30:00\n0.371\n0.0\n0.0\n0.001\n18.52\n42.46\n1.823\n879.5826\n\n\n2018-01-01 00:40:00\n0.305\n0.0\n0.0\n0.001\n18.49\n42.43\n2.149\n879.6826\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n2018-02-28 23:20:00\n0.000\n0.0\n0.0\n0.000\n22.49\n38.44\n1.811\n874.8154\n\n\n2018-02-28 23:30:00\n0.000\n0.0\n0.0\n0.000\n22.75\n39.60\n0.859\n874.8812\n\n\n2018-02-28 23:40:00\n0.003\n0.0\n0.0\n0.000\n22.34\n39.43\n1.244\n875.0685\n\n\n2018-02-28 23:50:00\n0.117\n0.0\n0.0\n0.000\n22.52\n39.90\n1.729\n874.9626\n\n\n2018-03-01 00:00:00\n0.004\n0.0\n0.0\n0.000\n22.35\n41.03\n1.508\n875.0115\n\n\n\n\n8498 rows × 8 columns\n\n\n\n\npd.concat([e2,e1],axis=1)\n\n\n\n\n\n\n\n\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\nDirecta\nGlobal\nDifusa\nUV\nTemperatura\nHumedad\nViento Vel.\nPresiòn Bar.\n\n\nFecha\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2018-01-01 00:00:00\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n0.057\n0.0\n0.0\n0.001\n18.93\n41.57\n1.253\n879.0692\n\n\n2018-01-01 00:10:00\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n0.002\n0.0\n0.0\n0.001\n18.76\n41.00\n0.418\n879.4363\n\n\n2018-01-01 00:20:00\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n0.170\n0.0\n0.0\n0.001\n18.92\n40.96\n0.955\n879.5181\n\n\n2018-01-01 00:30:00\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n0.371\n0.0\n0.0\n0.001\n18.52\n42.46\n1.823\n879.5826\n\n\n2018-01-01 00:40:00\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n0.305\n0.0\n0.0\n0.001\n18.49\n42.43\n2.149\n879.6826\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n2018-02-28 23:20:00\n0.000\n0.0\n0.0\n0.0\n22.49\n38.44\n1.811\n874.8154\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n2018-02-28 23:30:00\n0.000\n0.0\n0.0\n0.0\n22.75\n39.60\n0.859\n874.8812\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n2018-02-28 23:40:00\n0.003\n0.0\n0.0\n0.0\n22.34\n39.43\n1.244\n875.0685\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n2018-02-28 23:50:00\n0.117\n0.0\n0.0\n0.0\n22.52\n39.90\n1.729\n874.9626\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n2018-03-01 00:00:00\n0.004\n0.0\n0.0\n0.0\n22.35\n41.03\n1.508\n875.0115\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n\n\n8497 rows × 16 columns\n\n\n\nHacer una lista de glob, cargar todos los archivos usando un list comprehension y definiendo una función, concatenando todos los archivos y ordenando el índice.",
+    "crumbs": [
+      "otro",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Ejercicio propuesto</span>"
+    ]
+  }
+]

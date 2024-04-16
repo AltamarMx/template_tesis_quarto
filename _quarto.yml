@@ -1,0 +1,27 @@
+project:
+  type: book
+  
+book:
+  title: "Python: de Usuario a Explorador de Datos"
+  author: Guillermo Barrios
+  navbar:
+    search: True
+  sidebar:
+    menu: True
+    collapse-level: 1
+    border: true
+  chapters:
+    - index.qmd
+    - part: "Introduccion"
+      chapters: 
+        - intro.qmd
+    - part: "otro"
+      chapters: 
+        - libreta.ipynb
+    - part: "referencias"
+      chapters: 
+        - references.qmd
+format:
+  html: 
+    theme: cosmo
+    code-link: true

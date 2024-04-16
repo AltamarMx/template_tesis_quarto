@@ -1,0 +1,11 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+See @knuth84 for additional discussion of literate programming.
+
+Como se ve en @fig-figurita.
+
+  
+
+![figurota](imagenes/python_cuadrado.jpg){#fig-figurita }
